@@ -2,7 +2,7 @@
 
 body {
   font: normal normal 13px/16px "Open Sans", sans-serif;
-  background: red;
+  background: grey;
 }
 
 .main {
@@ -12,22 +12,23 @@ body {
 .container {
   padding: 2px;
   width: 50%;
-  margin 0 auto;
+  margin: 0 auto;
   margin-top: 40px;
   background: white;
   border-radius: 5px;
-  /* position: absolute; */
-  text-align: center;
+}
+
+form {
   display: inline-block;
 }
 
-.description {
-}
 input {
   border-radius: 5px;
   color: white;
   background-color: black;
+  padding: 4px 15px 4px 5px;
 }
+
 #button {
   display: inline-block;
   background-color: yellow;
@@ -36,4 +37,33 @@ input {
   text-align: center;
   margin-top: 2px;
   padding: 5px 15px;
+  border: black 2px solid;
+  opacity: 0.8;
+}
+
+#button:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+ol {
+  padding-left: 20px;
+}
+
+ol li {
+  padding: 5px;
+  color: #000;
+  text-align: left;
+}
+
+ol li:nth-child(even) {
+  background: #dfdfdf;
+  text-align: left;
+}
+
+.strike {
+  text-decoration: line-through;
+}
+li:hover {
+  cursor: pointer;
 }
